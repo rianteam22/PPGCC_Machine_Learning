@@ -1,0 +1,10 @@
+# Ambiente de exploração do dataset Adult Census Income
+# Criar/instalar: uv venv .venv && uv pip install -r requirements.txt
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+seaborn>=0.13
+notebook>=7
+ipykernel>=6
+nbformat>=5.10
+nbconvert>=7

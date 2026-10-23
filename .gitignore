@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# Ambientes virtuais (recriar com: uv venv .venv && uv pip install -r requirements.txt)
+.venv/
+venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------------------
+# Jupyter
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ---------------------------------------------------------------------------
+# Ferramentas e editores
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/settings.local.json
+
+# Cache de testes, lint e tipagem
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------------------
+# Sistema operacional
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Segredos e configuração local
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------------------
+# Dados e artefatos gerados
+# ---------------------------------------------------------------------------
+# O adult.csv (4 MB) fica versionado para o notebook ser reproduzível.
+# Se o repositório passar a ter dados grandes, descomente as linhas abaixo
+# ou mova os dados para uma pasta data/ ignorada.
+# *.csv
+# data/
+# !requirements.txt
+
+# Modelos treinados, resultados e logs
+*.pkl
+*.joblib
+*.h5
+*.log
+outputs/
