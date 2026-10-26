@@ -1,0 +1,199 @@
+{
+  "modelo": "Exp. 3: TPE, seed 1",
+  "parametros": {
+    "criterion": "gini",
+    "splitter": "best",
+    "max_depth": 23,
+    "min_samples_leaf": 3,
+    "min_samples_split": 25,
+    "max_features": 0.8,
+    "ccp_alpha": 0.0002485894041712475,
+    "min_impurity_decrease": 2.4629728287365765e-05,
+    "class_weight": null
+  },
+  "colunas_entrada": [
+    "idade",
+    "classe_trabalho",
+    "escolaridade_num",
+    "estado_civil",
+    "ocupacao",
+    "relacao_familiar",
+    "raca",
+    "sexo",
+    "ganho_capital",
+    "perda_capital",
+    "horas_semana",
+    "pais_origem"
+  ],
+  "n_treino": 21097,
+  "n_teste": 9042,
+  "cv": {
+    "acuracia": 0.8526800447984687,
+    "acuracia_std": 0.004731045172834858,
+    "acuracia_bal": 0.7726612384700793,
+    "acuracia_bal_std": 0.009317786260977458,
+    "precisao": 0.7500007078708536,
+    "precisao_std": 0.014217702625516025,
+    "revocacao": 0.6132398169543746,
+    "revocacao_std": 0.02123723046004926,
+    "f1": 0.6744624817080545,
+    "f1_std": 0.013350718096391712,
+    "roc_auc": 0.8992344810520441,
+    "roc_auc_std": 0.0034172016202292355,
+    "acuracia_treino": 0.8602762873032905,
+    "tempo_ajuste_s": 0.19934050860174465,
+    "tempo_total_s": 0.4653057899995474
+  },
+  "tamanho": {
+    "profundidade": 13,
+    "n_folhas": 51,
+    "n_nos": 101
+  },
+  "tamanho_inicial": {
+    "profundidade": 7,
+    "n_folhas": 62,
+    "n_nos": 123
+  },
+  "teste_final": {
+    "acuracia": 0.8543463835434638,
+    "acuracia_bal": 0.7659094060066391,
+    "precisao": 0.7716443927948867,
+    "revocacao": 0.5896980461811723,
+    "f1": 0.6685124590989177,
+    "roc_auc": 0.9033883479780368
+  },
+  "teste_inicial": {
+    "acuracia": 0.8533510285335103,
+    "acuracia_bal": 0.7502595630916848,
+    "precisao": 0.8030104712041884,
+    "revocacao": 0.5448490230905861,
+    "f1": 0.6492063492063492,
+    "roc_auc": 0.9034492004488892
+  },
+  "mcnemar": {
+    "so_final_acerta": 160,
+    "so_inicial_acerta": 151,
+    "p_valor": 0.6501590306340168
+  },
+  "matriz_confusao": {
+    "vn": 6397,
+    "fp": 393,
+    "fn": 924,
+    "vp": 1328
+  },
+  "matriz_confusao_inicial": {
+    "vn": 6489,
+    "fp": 301,
+    "fn": 1025,
+    "vp": 1227
+  },
+  "importancia": [
+    {
+      "atributo": "escolaridade_num",
+      "queda_pp": 5.50541915505419,
+      "std_pp": 0.33522510605204897
+    },
+    {
+      "atributo": "estado_civil",
+      "queda_pp": 5.503207255032071,
+      "std_pp": 0.21486192337236812
+    },
+    {
+      "atributo": "ganho_capital",
+      "queda_pp": 4.891616898916168,
+      "std_pp": 0.16103255005442837
+    },
+    {
+      "atributo": "idade",
+      "queda_pp": 1.007520460075202,
+      "std_pp": 0.1333988449608086
+    },
+    {
+      "atributo": "perda_capital",
+      "queda_pp": 0.9666003096660014,
+      "std_pp": 0.09135977185606459
+    },
+    {
+      "atributo": "horas_semana",
+      "queda_pp": 0.6890068568900676,
+      "std_pp": 0.1796309324384249
+    },
+    {
+      "atributo": "classe_trabalho",
+      "queda_pp": 0.05419155054191327,
+      "std_pp": 0.054730559750758065
+    },
+    {
+      "atributo": "ocupacao",
+      "queda_pp": 0.02875470028754545,
+      "std_pp": 0.0453843940028388
+    },
+    {
+      "atributo": "relacao_familiar",
+      "queda_pp": 0.01548330015483046,
+      "std_pp": 0.02330381276897221
+    },
+    {
+      "atributo": "raca",
+      "queda_pp": 0.0,
+      "std_pp": 0.0
+    },
+    {
+      "atributo": "sexo",
+      "queda_pp": 0.0,
+      "std_pp": 0.0
+    },
+    {
+      "atributo": "pais_origem",
+      "queda_pp": 0.0,
+      "std_pp": 0.0
+    }
+  ],
+  "splits": {
+    "perda_capital": 12,
+    "escolaridade_num": 8,
+    "horas_semana": 8,
+    "idade": 6,
+    "ocupacao": 6,
+    "ganho_capital": 4,
+    "classe_trabalho": 3,
+    "estado_civil": 1,
+    "sexo": 1,
+    "relacao_familiar": 1
+  },
+  "n_nos_internos": 50,
+  "candidatos": {
+    "Árvore inicial": {
+      "cv_acuracia": 0.8481768887980238
+    },
+    "Exp. 2: busca em grade": {
+      "cv_acuracia": 0.8508314901332159
+    },
+    "Exp. 2: busca aleatória": {
+      "cv_acuracia": 0.8503573318175844
+    },
+    "Exp. 3: TPE, seed 0": {
+      "cv_acuracia": 0.8519215712265321
+    },
+    "Exp. 3: TPE, seed 1": {
+      "cv_acuracia": 0.8526800447984687
+    },
+    "Exp. 3: TPE, seed 2": {
+      "cv_acuracia": 0.8525378310037306
+    },
+    "Exp. 3: amostrador aleatório, seed 0": {
+      "cv_acuracia": 0.8489354634698143
+    },
+    "Exp. 3: amostrador aleatório, seed 1": {
+      "cv_acuracia": 0.8510210972928828
+    },
+    "Exp. 3: amostrador aleatório, seed 2": {
+      "cv_acuracia": 0.851021400592445
+    }
+  },
+  "protocolo": {
+    "seed": 42,
+    "teste": 0.3,
+    "folds": 5
+  }
+}
