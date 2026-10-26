@@ -62,9 +62,17 @@ Thumbs.db
 # data/
 # !requirements.txt
 
-# Modelos treinados, resultados e logs
+# Modelos treinados e logs (os resultados em resultados/*.json e *.csv ficam versionados)
 *.pkl
 *.joblib
 *.h5
 *.log
 outputs/
+modelos/
+
+# Worktrees git dos experimentos (criadas com: git worktree add .worktrees/<nome> exp/<nome>)
+.worktrees/
+
+# Dependências Node (docx-js) para gerar relatorio/relatorio.docx
+node_modules/
+package-lock.json
